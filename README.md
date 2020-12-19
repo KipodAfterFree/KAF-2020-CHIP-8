@@ -5,7 +5,8 @@ CHIP-8 was a hard Pwn challenge in the KipodAfterFree CTF 2020.
 ### Compilation
 
 ```sh
-mkdir cmake-build-debug
+git submodule update --init --recursive # Make sure to download submodules!
+mkdir -p cmake-build-debug && cd cmake-build-debug
 cmake ..
 make
 ```
