@@ -12,7 +12,9 @@ namespace Instructions
 
     void Invalid::execute(Cpu &cpu, Memory &memory, IO &io)
     {
-        throw std::runtime_error("Tried to run an invalid instruction " + std::to_string(_opcode));
+	std::stringstream stream;
+	stream << std::hex << _opcode;
+	throw std::runtime_error("Tried to run an invalid instruction " + stream.str());
     }
 
     bool Invalid::compile(Memory &memory, IO &io, JITSection &jit, addr12 pc)
