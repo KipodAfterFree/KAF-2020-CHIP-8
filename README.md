@@ -1,6 +1,6 @@
 # KAF-2020-CHIP-8
 
-CHIP-8 was a hard Pwn challenge in the KipodAfterFree CTF 2020.
+A semi-functional JIT CHIP-8 emulator, created for the KipodAfterFree CTF 2020 as a difficult Pwn challenge.
 
 ### Compilation
 
